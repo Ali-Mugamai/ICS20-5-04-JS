@@ -61,7 +61,21 @@
           width="25%"
           height="25%"
         />
-        <p></p>
+        <form action="#">
+          <p>hourly rate</p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern="-?[0-9]*(\.[0-9]+)?"
+              id="hourly_rate"
+            />
+            <label class="mdl-textfield__label" for="hourly_rate"
+              >hourly rate ...</label
+            >
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+        </form>
         <div id="radio-button-value">?</div>
         <div id="radio-buttons">
           <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="kids">
@@ -101,6 +115,58 @@
             />
             <span class="mdl-radio__label">17+</span>
           </label>
+          <label
+          class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+          for="adults"
+        >
+          <input
+            class="mdl-radio__button"
+            id="adults"
+            name="flash"
+            type="radio"
+            value="off"
+          />
+          <span class="mdl-radio__label">17+</span>
+        </label>
+        <label
+        class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+        for="adults"
+      >
+        <input
+          class="mdl-radio__button"
+          id="adults"
+          name="flash"
+          type="radio"
+          value="off"
+        />
+        <span class="mdl-radio__label">17+</span>
+      </label>
+      <label
+      class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+      for="adults"
+    >
+      <input
+        class="mdl-radio__button"
+        id="adults"
+        name="flash"
+        type="radio"
+        value="off"
+      />
+      <span class="mdl-radio__label">17+</span>
+    </label>
+    <label
+    class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+    for="adults"
+  >
+    <input
+      class="mdl-radio__button"
+      id="adults"
+      name="flash"
+      type="radio"
+      value="off"
+    />
+    <span class="mdl-radio__label">17+</span>
+  </label>
         </div>
         <div>
           <!-- Raised button with ripple -->
