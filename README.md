@@ -1,4 +1,4 @@
-# ICS20-5-03-Js
+#ICS20-5-04-JS
 
 [![Mr Coxall's Super Linter](https://github.com/Ali-Mugamai/ICS20-5-04-JS/workflows/Mr%20Coxall's%20Super%20Linter/badge.svg)](https://github.com/Ali-Mugamai/ICS20-5-04-JS/actions)
 
