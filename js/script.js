@@ -8,8 +8,8 @@
  * Check servie worker.
  */
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS20-5-03-Js-/sw.js", {
-    scope: "/ICS20-5-03-Js-/",
+  navigator.serviceWorker.register("/ICS20-5-04-JS/sw.js", {
+    scope: "/ICS20-5-04-JS/",
   })
 }
 
@@ -24,20 +24,19 @@ function updateSliderValue(valueFromSlider) {
  * This function displays the slider value.
  */
 function myButtonClicked() {
-  children = document.getElementById("kids").checked
-  teenagers = document.getElementById("teens").checked
-  adult = document.getElementById("adults").checked
+  const age = parseInt(document.getElementById("age").value)
+  mon = document.getElementById("monday").checked
+  tues = document.getElementById("tuesday").checked
+  wed = document.getElementById("wednesday").checked
+  thurs = document.getElementById("thursday").checked
+  fri = document.getElementById("friday").checked
+  sat = document.getElementById("saturday").checked
+  sun = document.getElementById("sunday").checked
 
-  if (children == true) {
+  if (thurs == true || tues == true || age > 12 && age < 21) {
     document.getElementById("answer").innerHTML =
-      "<p>you can only watch a G rated film.</p>"
-  } else if (teenagers == true) {
-    document.getElementById("answer").innerHTML =
-      "<p>you can watch a PG-13 rated film and below.</p>"
-  } else if (adult == true) {
-    document.getElementById("answer").innerHTML =
-      "<p>you can watch an R rated film!</p>"
+      "<p>Youre eligible for a discount!</p>"
   } else {
-    document.getElementById("answer").innerHTML = "<p>not working</p>"
+    document.getElementById("answer").innerHTML = "<p>regular pricing</p>"
   }
 }
