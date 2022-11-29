@@ -33,7 +33,7 @@ function myButtonClicked() {
   sat = document.getElementById("saturday").checked
   sun = document.getElementById("sunday").checked
 
-  if (thurs == true || tues == true || age > 12 && age < 21) {
+  if (thurs == true || tues == true || (age > 12 && age < 21)) {
     document.getElementById("answer").innerHTML =
       "<p>Youre eligible for a discount!</p>"
   } else {
