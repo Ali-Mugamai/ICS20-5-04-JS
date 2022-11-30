@@ -40,7 +40,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
   </head>
-  <title>My first Radio Button Program</title>
+  <title>discount calculator</title>
   <body>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script src="./js/script.js"></script>
@@ -59,7 +59,7 @@
           height="25%"
         />
         <form action="#">
-          <p>enter age...</p>
+          <p>how old are you?</p>
           <div class="mdl-textfield mdl-js-textfield">
             <input
               class="mdl-textfield__input"
@@ -67,104 +67,24 @@
               pattern="-?[0-9]*(\.[0-9]+)?"
               id="age"
             />
-            <label class="mdl-textfield__label" for="age">age ...</label>
+            <label class="mdl-textfield__label" for="hourly_rate"
+              >age ...</label
+            >
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
         </form>
-        <div id="radio-button-value">?</div>
-        <div id="radio-buttons">
-          <label
-            class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
-            for="monday"
-          >
-            <input
-              checked
-              class="mdl-radio__button"
-              id="monday"
-              name="flash"
-              type="radio"
-              value="on"
-            />
-            <span class="mdl-radio__label">monday</span>
-          </label>
-          <label
-            class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
-            for="tuesday"
-          >
-            <input
-              class="mdl-radio__button"
-              id="tuesday"
-              name="flash"
-              type="radio"
-              value="off"
-            />
-            <span class="mdl-radio__label">tuesday</span>
-          </label>
-          <label
-            class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
-            for="wednesday"
-          >
-            <input
-              class="mdl-radio__button"
-              id="wednesday"
-              name="flash"
-              type="radio"
-              value="off"
-            />
-            <span class="mdl-radio__label">wednesday</span>
-          </label>
-          <label
-            class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
-            for="thurday"
-          >
-            <input
-              class="mdl-radio__button"
-              id="thursday"
-              name="flash"
-              type="radio"
-              value="off"
-            />
-            <span class="mdl-radio__label">thurday</span>
-          </label>
-          <label
-            class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
-            for="friday"
-          >
-            <input
-              class="mdl-radio__button"
-              id="friday"
-              name="flash"
-              type="radio"
-              value="off"
-            />
-            <span class="mdl-radio__label">friday</span>
-          </label>
-          <label
-            class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
-            for="saturday"
-          >
-            <input
-              class="mdl-radio__button"
-              id="saturday"
-              name="flash"
-              type="radio"
-              value="off"
-            />
-            <span class="mdl-radio__label">saturday</span>
-          </label>
-          <label
-            class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
-            for="sunday"
-          >
-            <input
-              class="mdl-radio__button"
-              id="sunday"
-              name="flash"
-              type="radio"
-              value="off"
-            />
-            <span class="mdl-radio__label">sunday</span>
-          </label>
+        <option value="audi">Audi</option>
+          <label for="cars">Choose a car:</label>
+
+            <select name="cars" id="cars">
+              <option value="volvo">monday</option>
+              <option value="saab">tuesday</option>
+              <option value="mercedes">wednesday</option>
+              <option value="audi">thursday</option>
+              <option value="audi">friday</option>
+              <option value="audi">saturday</option>
+              <option value="audi">sunday</option>
+            </select>
         </div>
         <div>
           <!-- Raised button with ripple -->

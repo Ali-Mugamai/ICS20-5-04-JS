@@ -24,14 +24,14 @@ function updateSliderValue(valueFromSlider) {
  * This function displays the slider value.
  */
 function myButtonClicked() {
-  const age = parseInt(document.getElementById("age").value)
   mon = document.getElementById("monday").checked
-  tues = document.getElementById("tuesday").checked
+  tue = document.getElementById("tuesday").checked
   wed = document.getElementById("wednesday").checked
-  thurs = document.getElementById("thursday").checked
+  thur = document.getElementById("thursday").checked
   fri = document.getElementById("friday").checked
   sat = document.getElementById("saturday").checked
   sun = document.getElementById("sunday").checked
+  const age = parseInt(document.getElementById("age").value)
 
   if (thurs == true || tues == true || (age > 12 && age < 21)) {
     document.getElementById("answer").innerHTML =
